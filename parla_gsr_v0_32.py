@@ -22,7 +22,7 @@ subprocess.call(command, shell=True)
 # Split Audio
 # Don't forget to install ffmppeg on local machine
 
-command = "ffmpeg -i audio_wav.wav -f segment -segment_time 45 -c copy %03d.wav"
+command = "ffmpeg -i audio_wav.wav -f segment -segment_time 120 -c copy %03d.wav"
 subprocess.call(command, shell=True)
 
 # Colect WAV files
